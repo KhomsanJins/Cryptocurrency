@@ -1,0 +1,52 @@
+.logo {
+    width: 168px;
+    height: 29px;
+    background-image: url("../public/coinmarketcap_1.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 50px;
+    display: block;
+}
+
+.list_f_link {
+    margin-top: 25px;
+    padding-bottom: 25px;
+
+    li {
+        list-style: none;
+        margin-top: 10px;
+
+        a {
+            font-size: 14px;
+            transition: all ease-in .3s;
+
+            &:hover {
+                color: #3861FB;
+            }
+        }
+
+        .badge {
+            background-color: #3861FB;
+            color: #fff;
+            border-radius: 40px;
+            padding: 5px 10px;
+            margin-left: 5px;
+            font-size: 10px;
+        }
+    }
+}
+
+.list_dl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {
+        margin-right: 5px;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}

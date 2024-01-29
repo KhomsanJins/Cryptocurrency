@@ -1,0 +1,129 @@
+.logo {
+  width: 168px;
+  height: 29px;
+  background-image: url("../public/coinmarketcap_1.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+}
+
+.list_h_menu {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.list_h_menu li {
+  padding: 24px 14px;
+}
+.list_h_menu li a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0d1421;
+  transition: all ease-in 0.3s;
+}
+.list_h_menu li a:hover {
+  color: #3861FB;
+}
+
+.wrap_sub_menu_four_squar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  grid-row-gap: 16px;
+}
+.wrap_sub_menu_four_squar div:first-child {
+  grid-row: 1/3;
+}
+
+.wrap_dm .img_dm {
+  width: 64px;
+  height: auto;
+  margin: 0 12px 12px 0;
+}
+
+.list_sub_menu li a .badge {
+  background-color: #3861FB;
+  color: #fff;
+  border-radius: 40px;
+  padding: 0px 10px;
+  margin-left: 5px;
+  font-size: 10px;
+}
+
+.list_time_countdown {
+  display: flex;
+  background-color: #EFF2F5;
+  border-radius: 4px;
+  padding: 2px;
+  margin-top: 10px;
+}
+.list_time_countdown li {
+  width: 25%;
+  border-radius: 4px;
+  background-color: #FCFDFE;
+  padding: 2px 4px;
+  margin-right: 2px;
+  text-align: center;
+}
+.list_time_countdown li:last-child {
+  margin-right: 0px;
+}
+
+.btn_main {
+  min-width: 75px;
+  height: 32px;
+  background-color: #3861fb;
+  border-radius: 8px;
+}
+.btn_main span {
+  color: #fff;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.list_global_stats {
+  display: flex;
+  align-items: center;
+}
+.list_global_stats .item_global_stats {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.list_global_stats .item_global_stats .base_txt {
+  white-space: nowrap;
+}
+.list_global_stats .item_global_stats a {
+  color: #3861fb;
+  font-weight: 500;
+  transition: all 0.3s;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.list_global_stats .item_global_stats a:hover {
+  color: rgba(56, 97, 251, 0.8);
+}
+.list_global_stats .item_global_stats .up {
+  color: #16C784;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+.list_global_stats .item_global_stats .down {
+  color: #EA3943;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.line_btw {
+  width: 1px;
+  height: 22px;
+  background-color: #EFF2F5;
+  margin: 0 5px;
+}/*# sourceMappingURL=Navbar.module.css.map */
