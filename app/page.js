@@ -1396,7 +1396,7 @@ export default function Home() {
           </ScrollShadow>
         </div>
 
-        <div className={styles.box_chart}>
+        <div className={styles.box_chart} id="SChart">
           <div className="block lg:hidden relative lg:sticky top-[-20px] left-0 z-10 bg-white p-[20px] m-[-20px]">
             <div className="flex flex-wrap items-center justify-between mb-0">
               <div className="flex items-center">
@@ -1484,7 +1484,7 @@ export default function Home() {
           <Charts />
         </div>
 
-        <div className={styles.box_community}>
+        <div className={styles.box_community} id="SCommunity">
           <div className="relative">
             <div className="p-[20px]">
               <div className="flex flex-wrap items-center justify-between relative mb-0 bg-white">
@@ -1633,7 +1633,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.box_markets}>
+        <div className={styles.box_markets} id="SMarkets">
           <div className="flex flex-wrap justify-between items-center gap-y-[24px] mt-[64px] mb-[24px]">
             <div className="font-bold text-[#0D1421] text-lg text-[25px]">
               Bitcoin markets
@@ -2058,7 +2058,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.box_news}>
+        <div className={styles.box_news} id="SNews">
           <div className="font-bold text-[#0D1421] text-lg mt-[64px] mb-[24px] text-[25px]">
             Bitcoin news
           </div>
@@ -2118,7 +2118,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.box_about}>
+        <div className={styles.box_about} id="SAbout">
           <div className="font-bold text-[#0D1421] text-lg mt-[64px] mb-[24px] text-[25px]">
             About Bitcoin
           </div>
