@@ -26,7 +26,7 @@ import ModalTags from "./modalTags"
 import News from "./News"
 import AboutAccordion from "./aboutAccordion"
 import AlsoWatch from "./alsoWatch"
-import Charts from "./lineChart"
+import Charts from "./components/lineChart"
 // import BasicArea from "./lineReChart";
 import DoughnutChart from "./doughnutChart"
 

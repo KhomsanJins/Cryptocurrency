@@ -1,4 +1,10 @@
+// 'use client' // if you use app dir, don't forget this line
+
 import React from 'react';
+
+// import dynamic from "next/dynamic";
+// const ApexChart = dynamic(() => import("apexcharts"), { ssr: false });
+
 import ApexCharts from 'apexcharts'
 import Link from "next/link"
 import { useState, useEffect } from 'react'
@@ -186,15 +192,6 @@ export default function Charts() {
         }
     }
 
-    // var resetCssClasses = function (activeEl) {
-    //     var els = document.querySelectorAll('button')
-    //     Array.prototype.forEach.call(els, function (el) {
-    //         el.classList.remove('active')
-    //     })
-
-    //     activeEl.target.classList.add('active')
-    // }
-
     const marketchart = async function (button) {
         console.log(button.target.title);
 
@@ -204,7 +201,7 @@ export default function Charts() {
             const title = button.target.title
             if (title == '1D') {
                 day = '1'
-            } 
+            }
             if (title == '7D') {
                 day = '7'
             }
