@@ -1,5 +1,5 @@
 import React from 'react';
-import ApexCharts from 'apexcharts'
+// import ApexCharts from 'apexcharts'
 import Link from "next/link"
 import { useState, useEffect } from 'react'
 import {
@@ -104,15 +104,15 @@ export default function Charts() {
         }
     };
 
-    if (document.querySelector("#chart")) {
-        console.log(361, document.querySelector("#chart").innerHTML)
+    // if (document.querySelector("#chart")) {
+    //     console.log(361, document.querySelector("#chart").innerHTML)
 
-        if (document.querySelector("#chart").innerHTML == '') {
-            var chart = new ApexCharts(document.querySelector("#chart"), options);
+    //     if (document.querySelector("#chart").innerHTML == '') {
+    //         var chart = new ApexCharts(document.querySelector("#chart"), options);
 
-            chart.render();
-        }
-    }
+    //         chart.render();
+    //     }
+    // }
 
     const marketchart = async function (button) {
         console.log(button.target.title);
