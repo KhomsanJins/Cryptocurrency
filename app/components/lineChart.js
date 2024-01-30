@@ -1,10 +1,4 @@
-// 'use client' // if you use app dir, don't forget this line
-
 import React from 'react';
-
-// import dynamic from "next/dynamic";
-// const ApexChart = dynamic(() => import("apexcharts"), { ssr: false });
-
 import ApexCharts from 'apexcharts'
 import Link from "next/link"
 import { useState, useEffect } from 'react'
@@ -47,78 +41,6 @@ export default function Charts() {
     }, [])
     console.log(1, data)
     // 
-
-    // var options = {
-    //     series: [{
-    //         data: !data ? []
-    //             : data.prices
-    //     }],
-
-    //     chart: {
-    //         id: 'area-datetime',
-    //         type: 'area',
-    //         height: 350,
-    //         zoom: {
-    //             autoScaleYaxis: true
-    //         }
-    //     },
-    //     annotations: {
-    //         yaxis: [{
-    //             y: 30,
-    //             borderColor: '#999',
-    //             label: {
-    //                 show: true,
-    //                 text: 'Support',
-    //                 style: {
-    //                     color: "#fff",
-    //                     background: '#00E396'
-    //                 }
-    //             }
-    //         }],
-    //         xaxis: [{
-    //             x: !data ? []
-    //             : new Date(data.prices[data.prices.length - 1][0]).getTime(),
-
-    //             borderColor: '#999',
-    //             yAxisIndex: 0,
-    //             label: {
-    //                 show: true,
-    //                 text: 'Rally',
-    //                 style: {
-    //                     color: "#fff",
-    //                     background: '#775DD0'
-    //                 }
-    //             }
-    //         }]
-    //     },
-    //     dataLabels: {
-    //         enabled: false
-    //     },
-    //     markers: {
-    //         size: 0,
-    //         style: 'hollow',
-    //     },
-    //     xaxis: {
-    //         type: 'datetime',
-    //         min: !data ? []
-    //         : new Date(data.prices[data.prices.length - 1][0]).getTime(),
-    //         tickAmount: 6,
-    //     },
-    //     tooltip: {
-    //         x: {
-    //             format: 'dd/MM/yyyy'
-    //         }
-    //     },
-    //     fill: {
-    //         type: 'gradient',
-    //         gradient: {
-    //             shadeIntensity: 1,
-    //             opacityFrom: 0.7,
-    //             opacityTo: 0.9,
-    //             stops: [0, 100]
-    //         }
-    //     },
-    // };
 
     var options = {
         series: [{

@@ -27,7 +27,7 @@ import News from "./News"
 import AboutAccordion from "./aboutAccordion"
 import AlsoWatch from "./alsoWatch"
 import Charts from "./components/lineChart"
-// import BasicArea from "./lineReChart";
+// import Charts from "./lineReChart"
 import DoughnutChart from "./doughnutChart"
 
 // icon start
