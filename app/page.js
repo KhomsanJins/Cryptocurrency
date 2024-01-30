@@ -1380,13 +1380,18 @@ export default function Home() {
             orientation="horizontal"
             className="max-w-[100%] min-h-[50px] flex items-end text-[#0D1421] font-medium"
           >
-            <Tabs key="" variant="underlined" color="primary" aria-label="Tabs variants" className="mb-[-4px]">
-              <Tab key="Chart" title="Chart" />
-              {/* <Tab key="Community" title="Community" /> */}
-              <Tab key="Markets" title="Markets" />
-              <Tab key="News" title="News" />
-              <Tab key="About" title="About" />
-              <Tab key="Analytics" title="Analytics" />
+            <Tabs key="" variant="underlined" color="primary" aria-label="Tabs variants"
+              classNames={{
+                tabList: "w-full relative rounded-none p-0",
+                // cursor: "w-full bg-[#3861fb]",
+                tab: "max-w-fit px-0 h-12 mb-[-4px]",
+                // tabContent: "group-data-[selected=true]:text-[#3861fb]"
+              }}>
+              <Tab key="Chart" href="#SChart" title={<div className="px-[12px] py-[4px]">Chart</div>} />
+              <Tab key="Markets" href="#SMarkets" title={<div className="px-[12px] py-[4px]">Markets</div>} />
+              <Tab key="News" href="#SNews" title={<div className="px-[12px] py-[4px]">News</div>} />
+              <Tab key="About" href="#SAbout" title={<div className="px-[12px] py-[4px]">About</div>} />
+              <Tab key="Analytics" href="#SAnalytics" title={<div className="px-[12px] py-[4px]">Analytics</div>} />
             </Tabs>
           </ScrollShadow>
         </div>
