@@ -1,5 +1,10 @@
+'use client' // if you use app dir, don't forget this line
+
 import React from 'react';
-// import ApexCharts from 'apexcharts'
+
+import dynamic from "next/dynamic";
+const ApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
+
 import Link from "next/link"
 import { useState, useEffect } from 'react'
 import {
@@ -42,34 +47,18 @@ export default function Charts() {
     console.log(1, data)
     // 
 
-    var options = {
-        series: [{
-            name: 'Prices',
-            data: !data ? []
-                : data.prices
-        }],
+    const option = {
         chart: {
-            type: 'area',
+            id: 'apexchart-example',
             stacked: false,
             height: 350,
-            zoom: {
-                type: 'x',
-                enabled: true,
-                autoScaleYaxis: true
-            },
-            toolbar: {
-                autoSelected: 'zoom'
-            }
+            width: '100%'
+        },
+        xaxis: {
+            type: 'datetime'
         },
         dataLabels: {
             enabled: false
-        },
-        markers: {
-            size: 0,
-        },
-        title: {
-            text: 'Bitcoin to USD Chart',
-            align: 'left'
         },
         fill: {
             type: 'gradient',
@@ -78,41 +67,20 @@ export default function Charts() {
                 inverseColors: false,
                 opacityFrom: 0.5,
                 opacityTo: 0,
-                stops: [0, 90, 100]
-            },
-        },
-        yaxis: {
-            labels: {
-                formatter: function (val) {
-                    return (val / 1000000).toFixed(0);
-                },
-            },
-            title: {
-                text: 'Price'
-            },
-        },
-        xaxis: {
-            type: 'datetime',
-        },
-        tooltip: {
-            shared: false,
-            y: {
-                formatter: function (val) {
-                    return (val / 1000000).toFixed(0)
-                }
+                stops: [0, 90, 100],
             }
-        }
-    };
+        },
+        responsive: [{
+            breakpoint: undefined,
+            options: {},
+        }]
+    }
 
-    // if (document.querySelector("#chart")) {
-    //     console.log(361, document.querySelector("#chart").innerHTML)
-
-    //     if (document.querySelector("#chart").innerHTML == '') {
-    //         var chart = new ApexCharts(document.querySelector("#chart"), options);
-
-    //         chart.render();
-    //     }
-    // }
+    const series = [{
+        name: 'Price',
+        data: !data ? []
+            : data.prices
+    }]
 
     const marketchart = async function (button) {
         console.log(button.target.title);
@@ -234,7 +202,9 @@ export default function Charts() {
                 </div>
             </div>
 
-            <div id="chart"></div>
+            <div className='w-full'>
+                <ApexChart type="area" options={option} series={series} height={200} width="100%" />
+            </div>
         </div>
     );
 }
